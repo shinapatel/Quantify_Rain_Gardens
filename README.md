@@ -21,19 +21,20 @@ To identify a distinct storm event, I modeled the drawdown rate to a first-order
 
 ![Decay Plots](https://github.com/shinapatel/Quantify_Rain_Gardens/blob/main/exponential_decay.png)
 As seen above, the drawndown rate of stormwater absoption parallels with that of a first-order exponential decay.
-   
 
-Then, I using the scipy.signal.find_peaks function to idenfity a unique storm event. I tested each parameter involved in the scipy.signal.find_peaks function (x, height=None, threshold=None, distance=None, prominence=None, width=None, wlen=None, rel_height=0.5, plateau_size=None) to identify and tune the hyperparameters. I optimized the mean drawdown rates (peak) for each sensor to identify the greatest variation in rain garden performance.
-           
+Then, I used the scipy.signal.find_peaks function to idenfity a unique storm event. I tested each parameter involved in the scipy.signal.find_peaks function (x, height, threshold, distance, prominence, width, wlen, rel_height, plateau_size) to identify and tune the hyperparameters. I optimized the mean drawdown rates (peak) for each sensor to identify the greatest variation in rain garden performance.
           
 ![Storms Segmentation](https://github.com/shinapatel/Quantify_Rain_Gardens/blob/main/decay_plots.png)
 The image above displays storms being segmented from the time series data reported from a GI sensor based on optimized hyperparameters of the scipy.signal.find_peaks function.
 
 ## Results
-To visualize the variation in α’s, I created boxplots of the mean drawdown rates for each sensor.
+Through hyperparameter tuning, I determined that prominence, distance, width, and relative height had the greatest influence on stormwater drawdown rates. Because drawdown rate efficiency varies between storms, rain garden performance cannot be accurately determined from a small subset of storms. Rather, multiple trials must be conducted to achieve the most comprehensive understanding of a rain garden's efficiency.
 
+To visualize the variation in α’s, I created side-by-side boxplots of the mean drawdown rates for each sensor.
 ![Box Plots](https://github.com/shinapatel/Quantify_Rain_Gardens/blob/main/box_plots_final.png)
 
+## Conclusion
+In conclusion, rain garden efficiency varies significantly over time and is dependent on the characteristics of an individual storm event. Thus, rather than taking a sample of 1 or 2 trials to determine rain garden water drawdown rates, it is imperative that multiple trials are conducted. This will allow for improved GI efficiency, thereby decreasing the negative effects of climate change in a more efficient manner.
 
-
-## Results
+## Future Implications
+With improvements in rain garden performance, we can gain a greater understanding of how GI functions, maintenance required, and ensure proper stormwater management. Not only can this have a greater positive impact on the environment, but such results can increase the demand for GI implementation in urban environments to further counteract the negative effects of climate change on a larger scale.
