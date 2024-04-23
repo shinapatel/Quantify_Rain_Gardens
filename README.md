@@ -10,6 +10,8 @@ Highly dense, hard impervious surfaces prevent stormwater absorption into the gr
 ### Removing Erreoneous Data
 To clean the data receieved from GI sensor's, a multistep algorithm was implemented. Any minor negative water depth (m) values attributed to sensor drift and outliers in the data that exceed 2 standard deviations of the mean are removed.
 
+![Clean time series data](https://github.com/shinapatel/Quantify_Rain_Gardens/blob/main/overlay_clean_data.png)
+
 ### Storm Segmentation
 
 
