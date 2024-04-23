@@ -30,6 +30,8 @@ The image above displays storms being segmented from the time series data report
 ## Results
 Through hyperparameter tuning, I determined that prominence, distance, width, and relative height had the greatest influence on stormwater drawdown rates. Because drawdown rate efficiency varies between storms, rain garden performance cannot be accurately determined from a small subset of storms. Rather, multiple trials must be conducted to achieve the most comprehensive understanding of a rain garden's efficiency.
 
+![Hyperparameter Tuning](https://github.com/shinapatel/Quantify_Rain_Gardens/blob/main/hyperparameter_tuning.png)
+
 To visualize the variation in α’s, I created side-by-side boxplots of the mean drawdown rates for each sensor.
 ![Box Plots](https://github.com/shinapatel/Quantify_Rain_Gardens/blob/main/box_plots_final.png)
 
