@@ -10,6 +10,7 @@ Rapid urbanization and climate change are driving urban flooding and sewer overf
 Impervious surfaces prevent stormwater absorption into the ground, causing excess stormwater (runoff) to accumulate. Such runoff collects pollutants as it drains into nearby bodies of water. This water pollution can be resolved using rain gardens–a type of green infrastructure (GI) to improve urban water systems. To track rain garden efficiency, the Digital Water Lab (DWL) deployed 33 GI sensors within different rain gardens in the Detroit area. Each GI sensor reports the water drawdown rates (water  depth over time) after a storm. Rain garden efficiency is quantifiable using a first-order exponential decay function to estimate the exponential decay coefficient, α. 
 
 ![GI Sensor](https://github.com/shinapatel/Quantify_Rain_Gardens/blob/main/GI_sensor.jpeg)
+
 This is a visual of what a GI Sensor looks like when implemented in a rain garden.
 
 ## Methods
