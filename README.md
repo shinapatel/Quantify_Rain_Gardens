@@ -24,8 +24,8 @@ As seen above, the drawndown rate of stormwater absoption parallels with that of
    
 
 Then, I using the scipy.signal.find_peaks function to idenfity a unique storm event. I tested each parameter involved in the scipy.signal.find_peaks function (x, height=None, threshold=None, distance=None, prominence=None, width=None, wlen=None, rel_height=0.5, plateau_size=None) to identify and tune the hyperparameters. I optimized the mean drawdown rates (peak) for each sensor to identify the greatest variation in rain garden performance.
-    
-    
+           
+          
 ![Storms Segmentation](https://github.com/shinapatel/Quantify_Rain_Gardens/blob/main/decay_plots.png)
 The image above displays storms being segmented from the time series data reported from a GI sensor based on optimized hyperparameters of the scipy.signal.find_peaks function.
 
