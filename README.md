@@ -1,7 +1,7 @@
 # Quantify_Rain_Gardens
 UROP 2023-2024 Digital Water Lab Research Project
 
-The goal of this project is to determine the variation in rain garden efficiency over time as modeled on a first order exponential decay function to demonstrate the importance of continuous monitoring.
+The goal of this project is to determine the variation in rain garden efficiency over time as modeled on a first order exponential decay function to demonstrate the importance of continuous green infrastructure monitoring.
 
 ## Abstract
 Rapid urbanization and climate change are driving urban flooding and sewer overflows in cities around the world. Concrete, asphalt, and other impervious surfaces prevent rainfall from absorbing into the ground, resulting in stormwater runoff. In order to manage stormwater, green infrastructure (GI) such as rain gardens are implemented to capture runoff. To determine the efficiency of rain gardens over time, the Digital Water Lab has deployed 33 GI sensors in the Detroit metro area to measure water drawdown rate (water depth over time) following storms. In this project, we initially model GI drawdown with a first-order exponential decay function, which is directly quantified by an exponential decay coefficient, α. Then, through hyperparameter tuning, we determine the best model fit for each sensor and examine how rain garden efficiency varies over time. Quantifying rain garden efficiency will support the further implementation of green infrastructure to improve urban stormwater management and reduce flooding.
