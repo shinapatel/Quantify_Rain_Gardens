@@ -9,6 +9,9 @@ Rapid urbanization and climate change are driving urban flooding and sewer overf
 ## Background
 Impervious surfaces prevent stormwater absorption into the ground, causing excess stormwater (runoff) to accumulate. Such runoff collects pollutants as it drains into nearby bodies of water. This water pollution can be resolved using rain gardens–a type of green infrastructure (GI) to improve urban water systems. To track rain garden efficiency, the Digital Water Lab (DWL) deployed 33 GI sensors within different rain gardens in the Detroit area. Each GI sensor reports the water drawdown rates (water  depth over time) after a storm. Rain garden efficiency is quantifiable using a first-order exponential decay function to estimate the exponential decay coefficient, α. 
 
+![GI Sensor](https://github.com/shinapatel/Quantify_Rain_Gardens/blob/main/GI_sensor.jpeg)
+This is a visual of what a GI Sensor looks like when implemented in a rain garden.
+
 ## Methods
 ### Removing Erroneous Data
 To clean the data receieved from GI sensor's, a multistep algorithm was implemented. Any minor negative water depth (m) values attributed to sensor drift and outliers in the data that exceed 2 standard deviations of the mean are removed.
@@ -31,6 +34,7 @@ The image above displays storms being segmented from the time series data report
 Through hyperparameter tuning, I determined that prominence, distance, width, and relative height had the greatest influence on stormwater drawdown rates. Because drawdown rate efficiency varies between storms, rain garden performance cannot be accurately determined from a small subset of storms. Rather, multiple trials must be conducted to achieve the most comprehensive understanding of a rain garden's efficiency.
 
 ![Hyperparameter Tuning](https://github.com/shinapatel/Quantify_Rain_Gardens/blob/main/hyperparameter_tuning.png)
+Hyperparameter tuning testing examples.
 
 To visualize the variation in α’s, I created side-by-side boxplots of the mean drawdown rates for each sensor.
 ![Box Plots](https://github.com/shinapatel/Quantify_Rain_Gardens/blob/main/box_plots_final.png)
